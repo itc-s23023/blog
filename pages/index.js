@@ -1,5 +1,15 @@
 import Hero from 'components/hero'
-
-export default function Home () {
-  return <Hero title='CUBE' subtitle='アウトプットしていくサイト' />
+const props = {
+  title: 'CUBE',
+  subtitle: 'アウトプットしていくサイト',
+  imageOn: true
 }
+const Home = () => {
+  return (
+    <>
+      <Hero {...props} />
+    </>
+  )
+}
+
+export default Home

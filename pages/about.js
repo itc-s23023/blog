@@ -1,5 +1,11 @@
 import Hero from 'components/hero'
-
-export default function About () {
-  return <Hero title='About' subtitle='About developmet activities' />
+const props = { title: 'About', subtitle: 'About development activities' }
+const About = () => {
+  return (
+    <>
+      <Hero {...props} />
+    </>
+  )
 }
+
+export default About

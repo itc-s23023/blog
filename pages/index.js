@@ -1,3 +1,4 @@
+import Meta from 'components/meta'
 import Container from 'components/container'
 import Hero from 'components/hero'
 const props = {
@@ -8,10 +9,11 @@ const props = {
 const Home = () => {
   return (
     <Container>
-    <>
-      <Hero {...props} />
-    </>
-   </Container> 
+      <>
+        <Meta />
+        <Hero {...props} />
+      </>
+    </Container>
   )
 }
 

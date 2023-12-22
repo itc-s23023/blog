@@ -1,3 +1,4 @@
+import Meta from 'components/meta'
 import Container from 'components/container'
 import Hero from 'components/hero'
 import PostBody from 'components/post-body'
@@ -7,12 +8,19 @@ import {
   TwoColumnMain,
   TwoColumnSidebar
 } from 'components/two-colum'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import eyecatch from 'images/about.jpg'
 const props = { title: 'About', subtitle: 'About development activities' }
 const About = () => {
   return (
     <Container>
+      <Meta
+        pageTitle='About'
+        pageDesc='About development activitiesf'
+        pageImg={eyecatch.src}
+        pageImgW={eyecatch.width}
+        pageImgH={eyecatch.height}
+      />
       <Hero {...props} />
       <figure>
         <Image
